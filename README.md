@@ -128,6 +128,16 @@ Nx comes with local caching already built-in (check your `nx.json`). On CI you m
 - [Set up task distribution across multiple machines](https://nx.dev/nx-cloud/features/distribute-task-execution)
 - [Learn more how to setup CI](https://nx.dev/recipes/ci)
 
+### Workflow Permissions
+
+Allow read and write permissions and allow GitHub Actions to create and approve pull requests.
+
+![perms](./.github/images/workflow-permissions.png)
+
+### Repo Secrets
+
+![secrets](./.github/images/repo-secrets.png)
+
 ## Explore the project graph
 
 Run `npx nx graph` to show the graph of the workspace.

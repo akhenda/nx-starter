@@ -10,6 +10,18 @@ Enhance your Nx experience by installing [Nx Console](https://nx.dev/nx-console)
 provides an interactive UI to view your projects, run tasks, generate code, and more! Available for VSCode, IntelliJ and
 comes with a LSP for Vim users.
 
+## Commitlint CZ-Git Config
+
+### Setup OpenAI token
+
+1. <https://platform.openai.com/account/api-keys>
+Login and create your API secret key, which usually starts with sk-
+2. Run command `npx czg --api-key=<API secret key>` and input your key to setup your token save to local
+
+```sh
+npx czg --api-key=sk-xxxxx
+```
+
 ## Start the application
 
 Run `npx nx serve api` to start the development server. Happy coding!

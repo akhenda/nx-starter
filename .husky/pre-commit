@@ -1,1 +1,1 @@
-bun
+npx lint-staged --concurrent false --relative

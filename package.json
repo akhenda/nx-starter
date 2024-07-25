@@ -3,6 +3,11 @@
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
+  "volta": {
+    "node": "22",
+    "pnpm": "8",
+    "bun": "1"
+  },
   "scripts": {
     "preinstall": "npx only-allow bun",
     "prepare": "husky",

@@ -7,10 +7,8 @@ async function getConfig() {
   } = await import('@commitlint/config-nx-scopes');
 
   return {
-    extends: [
-      '@commitlint/config-conventional',
-      '@commitlint/config-nx-scopes',
-    ],
+    extends: ['@commitlint/config-conventional', '@commitlint/config-nx-scopes'],
+    ignores: [(message) => /^chore\(release\)/m.test(message)],
     rules: {
       // @see: https://commitlint.js.org/#/reference-rules
       'scope-enum': async (ctx) => [
@@ -37,16 +35,13 @@ async function getConfig() {
         customScope: 'Denote the SCOPE of this change:',
         subject: 'Write a SHORT, IMPERATIVE tense description of the change:\n',
         body: 'Provide a LONGER description of the change (optional). Use "|" to break new line:\n',
-        breaking:
-          'List any BREAKING CHANGES (optional). Use "|" to break new line:\n',
-        footerPrefixesSelect:
-          'Select the ISSUES type of changeList by this change (optional):',
+        breaking: 'List any BREAKING CHANGES (optional). Use "|" to break new line:\n',
+        footerPrefixesSelect: 'Select the ISSUES type of changeList by this change (optional):',
         customFooterPrefix: 'Input ISSUES prefix:',
         footer: 'List any ISSUES by this change. E.g.: #31, #34:\n',
         generatingByAI: 'Generating your AI commit subject...',
         generatedSelectByAI: 'Select suitable subject by AI generated:',
-        confirmCommit:
-          'Are you sure you want to proceed with the commit above?',
+        confirmCommit: 'Are you sure you want to proceed with the commit above?',
       },
       types: [
         {
@@ -117,9 +112,7 @@ async function getConfig() {
       breaklineNumber: 100,
       breaklineChar: '|',
       skipQuestions: [],
-      issuePrefixes: [
-        { value: 'closed', name: 'closed:   ISSUES has been processed' },
-      ],
+      issuePrefixes: [{ value: 'closed', name: 'closed:   ISSUES has been processed' }],
       customIssuePrefixAlign: 'top',
       emptyIssuePrefixAlias: 'skip',
       customIssuePrefixAlias: 'custom',

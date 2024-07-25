@@ -438,3 +438,9 @@ Thumbs.db
 
 .nx/cache
 .nx/workspace-data
+
+
+
+*.orig
+/coverage-base
+!.vscode/css_custom_data.json

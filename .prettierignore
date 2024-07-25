@@ -3,3 +3,8 @@
 /coverage
 /.nx/cache
 /.nx/workspace-data
+/docs
+/node_modules
+/.github
+/.next
+/public

@@ -444,3 +444,7 @@ Thumbs.db
 *.orig
 /coverage-base
 !.vscode/css_custom_data.json
+eslint-report.json
+**/*/eslint-report.json
+eslint_report.json
+**/*/eslint_report.json

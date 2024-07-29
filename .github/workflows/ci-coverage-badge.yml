@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: ⤵️ Download artifact (base code coverage results)
         if: github.event_name == 'pull_request'
-        uses: dawidd6/action-download-artifact@v2
+        uses: dawidd6/action-download-artifact@v6
         id: restored-base-code-coverage
         with:
           workflow: merge.yml
@@ -20,17 +20,17 @@ jobs:
           if_no_artifact_found: ignore
         continue-on-error: true
 
-      - name: Download code coverage results
+      - name: ⤵️ Download code coverage results
         id: restored-code-coverage
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: coverage
           path: coverage
 
-      - name: Display structure of downloaded files
+      - name: 📋 Display structure of downloaded files
         run: ls -R
 
-      - name: Debug Secrets
+      - name: 🖥️ Debug Secrets
         env:
           DEBUG_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEBUG_COVERAGE_BADGES_GIST_TOKEN: ${{ secrets.COVERAGE_BADGES_GIST_TOKEN }}
@@ -43,7 +43,7 @@ jobs:
           echo ${#DEBUG_NPM_TOKEN}
 
       - name: 📔 Create coverage badge
-        uses: dkhunt27/nx-code-coverage@v1
+        uses: dkhunt27/nx-code-coverage@v2
         with:
           no-coverage-ran: false
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -53,6 +53,9 @@ jobs:
           gist-id: e87e6f67fa5b4ffc5757bc946b8db87a
           color: green
           named-logo: jest
+          gist-processing: true
+          hide-coverage-reports: false
+          hide-unchanged: false
 
       # - name: 📔 Generate coverage branch
       #   uses: team-tenacious/monorepo-coverage@main

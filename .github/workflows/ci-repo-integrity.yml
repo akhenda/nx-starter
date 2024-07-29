@@ -23,12 +23,14 @@ jobs:
       - name: 🚨 Check for vulnerabilities in dependencies
         if: steps.verify-conditions.outputs.check-deps-integrity == 'true'
         continue-on-error: true
-        run: npm audit
+        # run: npm audit
+        run: bunx bun-audit
 
       - name: 📜 Check for outdated dependencies
         if: steps.verify-conditions.outputs.check-deps-integrity == 'true'
         continue-on-error: true
-        run: npm outdated
+        # run: npm outdated
+        run: bunx npm-check-updates
 
   other-repo-checks:
     name: Other Repo Checks

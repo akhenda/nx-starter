@@ -43,7 +43,7 @@ jobs:
           echo ${#DEBUG_NPM_TOKEN}
 
       - name: 📔 Create coverage badge
-        uses: dkhunt27/nx-code-coverage@v1
+        uses: dkhunt27/nx-code-coverage@v2
         with:
           no-coverage-ran: false
           github-token: ${{ secrets.GITHUB_TOKEN }}

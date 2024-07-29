@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: ⤵️ Download artifact (base code coverage results)
         if: github.event_name == 'pull_request'
-        uses: dawidd6/action-download-artifact@v2
+        uses: dawidd6/action-download-artifact@v6
         id: restored-base-code-coverage
         with:
           workflow: merge.yml

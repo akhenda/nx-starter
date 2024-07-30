@@ -1,4 +1,4 @@
-name: NX
+name: NX Init
 
 on: workflow_call
 

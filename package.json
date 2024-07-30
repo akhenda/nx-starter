@@ -8,11 +8,11 @@
     "bun": "1"
   },
   "scripts": {
-    "preinstall": "bunx only-allow bun",
+    "preinstall": "npx only-allow bun",
     "prepare": "husky",
     "gc": "git add . && cz",
-    "gc-ai": "git add . && bunx czg ai -N=5",
-    "deps:audit": "bunx bun-audit",
+    "gc-ai": "git add . && npx czg ai -N=5",
+    "deps:audit": "npx bun-audit",
     "deps:update:1": "bunx nx run-many --target=update-deps --all",
     "deps:update:2": "bunx npm-check-updates --root --format group -i",
     "deps:update:3": "bunx taze --interactive --recursive"

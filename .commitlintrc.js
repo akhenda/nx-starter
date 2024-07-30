@@ -11,19 +11,19 @@ async function getConfig() {
     ignores: [(message) => /^chore\(release\)/m.test(message)],
     rules: {
       // @see: https://commitlint.js.org/#/reference-rules
-      'scope-enum': async (ctx) => [
+      'scope-enum': (ctx) => [
         2,
         'always',
         [
-          { value: 'deps', name: 'deps:         Dependencies processes' },
-          ...(await getProjects(ctx, ({ tags }) => {
+          'deps',
+          'version',
+          'release',
+          'deploy',
+          ...getProjects(ctx, ({ tags }) => {
             if (!tags) return [];
 
             return !tags.includes('stage:end-of-life');
-          })),
-          { value: 'version', name: 'version:       The versioning process' },
-          { value: 'release', name: 'release:       The release process' },
-          { value: 'deploy', name: 'deploy:       Deployment commit' },
+          }),
         ],
       ],
     },

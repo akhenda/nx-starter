@@ -35,6 +35,15 @@
       "options": {
         "packageRoot": "dist/{projectRoot}"
       }
+    },
+    "semantic-release": {
+      "executor": "@theunderscorer/nx-semantic-release:semantic-release",
+      "options": {
+        "github": true,
+        "changelog": true,
+        "npm": true,
+        "tagFormat": "ts-v${VERSION}"
+      }
     }
   }
 }

@@ -43,7 +43,7 @@
       "configurations": {
         "development": {},
         "production": {
-          "generateLockfile": true,
+          "generateLockfile": false,
           "esbuildOptions": {
             "sourcemap": false,
             "outExtension": {

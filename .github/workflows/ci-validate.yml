@@ -3,7 +3,7 @@
 # https://github.com/marketplace/actions/eslint-pr-review
 # https://github.com/marketplace/actions/eslint-annotate-from-report-json
 
-name: Validate
+name: 🕵️ Validate
 
 on: workflow_call
 
@@ -32,18 +32,18 @@ jobs:
       # Prepend any command with "nx-cloud record --" to record its logs to Nx Cloud
       # - run: bun nx-cloud record -- echo Hello World
       # Nx Affected runs only tasks affected by the changes in this PR/commit. Learn more: https://nx.dev/ci/features/affected
-      - name: ✅ Test & build projects
+      - name: 📝 Test & build projects
         run: |
           bun nx affected:test --ci --code-coverage
           bun nx affected:build
 
-      - name: ✅ Lint projects
+      - name: 🧐 Lint projects
         # Continue to the next step even if this fails
         continue-on-error: true
         run: |
           bun nx affected:lint --output-file=./eslint-report.json --format=json
 
-      - name: Annotate Code Linting Results
+      - name: ✍🏻 Annotate code linting results
         uses: ataylorme/eslint-annotate-action@v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

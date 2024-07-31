@@ -1,6 +1,8 @@
 {
   "name": "@nx-starter/browserslist",
   "version": "0.0.1",
+  "description": "Shareable browserslist configuration",
+  "author": "J.A.",
   "dependencies": {
     "@swc/helpers": "0.5.12"
   },

@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-starter/browserslist": ["libs/configs/browserslist/src/index.ts"]
+      "@nx-starter/browserslist": ["libs/configs/browserslist/src/index.ts"],
+      "@nx-starter/ts": ["libs/configs/ts/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

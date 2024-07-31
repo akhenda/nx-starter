@@ -20,7 +20,7 @@
         "outputPath": "dist/libs/configs/prettier",
         "main": "libs/configs/prettier/src/index.ts",
         "tsConfig": "libs/configs/prettier/tsconfig.lib.json",
-        "assets": ["libs/configs/prettier/*.md"]
+        "assets": ["libs/configs/prettier/*.md", "libs/configs/prettier/index.json"]
       }
     },
     "nx-release-publish": {

@@ -22,12 +22,12 @@
         "tsConfig": "libs/configs/ts/tsconfig.lib.json",
         "assets": [
           "libs/configs/ts/*.md",
-          "libs/typescript-configs/app.json",
-          "libs/typescript-configs/base.json",
-          "libs/typescript-configs/dom.json",
-          "libs/typescript-configs/library.json",
-          "libs/typescript-configs/node.base.json",
-          "libs/typescript-configs/node.library.json"
+          "libs/configs/ts/app.json",
+          "libs/configs/ts/base.json",
+          "libs/configs/ts/dom.json",
+          "libs/configs/ts/library.json",
+          "libs/configs/ts/node.base.json",
+          "libs/configs/ts/node.library.json"
         ]
       }
     },

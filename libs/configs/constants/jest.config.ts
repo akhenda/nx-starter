@@ -25,4 +25,5 @@ export default {
   moduleFileExtensions: ['ts', 'js', 'html'],
   testEnvironment: 'node',
   coverageDirectory: '../../../coverage/libs/configs/constants',
+  setupFilesAfterEnv: ['<rootDir>/test-setup.ts'],
 };

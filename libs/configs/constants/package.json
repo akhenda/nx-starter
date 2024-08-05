@@ -1,8 +1,11 @@
 {
   "name": "@nx-starter/constants",
   "version": "0.0.1",
+  "description": "Projects build & runtime configs",
+  "author": "J.A.",
   "dependencies": {
-    "@swc/helpers": "~0.5.11"
+    "@swc/helpers": "~0.5.11",
+    "envalid": "8.0.0"
   },
   "type": "commonjs",
   "main": "./src/index.js",

@@ -17,6 +17,7 @@
     "paths": {
       "@nx-starter/browserslist": ["libs/configs/browserslist/src/index.ts"],
       "@nx-starter/constants": ["libs/configs/constants/src/index.ts"],
+      "@nx-starter/eslint-config": ["libs/configs/eslint-config/src/index.ts"],
       "@nx-starter/prettier": ["libs/configs/prettier/src/index.ts"],
       "@nx-starter/ts": ["libs/configs/ts/src/index.ts"]
     }

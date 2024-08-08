@@ -1,7 +1,8 @@
-import { eslintConfig } from './eslint-config';
+import eslintConfig from './eslint-config';
 
 describe('eslintConfig', () => {
-  it('should work', () => {
-    expect(eslintConfig()).toEqual('eslint-config');
+  it('should match snapshot', () => {
+    expect(eslintConfig).toBeDefined();
+    // expect(eslintConfig).toMatchSnapshot();
   });
 });

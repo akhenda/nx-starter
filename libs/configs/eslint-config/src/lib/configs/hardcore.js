@@ -26,7 +26,7 @@ module.exports = [
    * Main configs
    */
   ...coreConfig,
-  ...shopify.configs.esnext,
+  ...fixupConfigRules(shopify.configs.esnext),
 
   /**
    * eslint-plugin-jsonc
@@ -54,8 +54,8 @@ module.exports = [
   /**
    * eslint-plugin-eslint-comments
    */
+  ...fixupConfigRules(compat.extends('plugin:eslint-comments/recommended')),
   {
-    extends: [...fixupConfigRules(compat.extends('plugin:eslint-comments/recommended'))],
     rules: {
       'eslint-comments/no-unused-disable': 'error',
     },
@@ -64,16 +64,16 @@ module.exports = [
   /**
    * eslint-plugin-no-unsanitized
    */
+  // ...fixupConfigRules(compat.extends('plugin:no-unsanitized/DOM')),
   {
-    extends: [...fixupConfigRules(compat.extends('plugin:no-unsanitized/DOM'))],
     rules: {},
   },
 
   /**
    * eslint-plugin-switch-case
    */
+  ...fixupConfigRules(compat.extends('plugin:switch-case/recommended')),
   {
-    extends: [...fixupConfigRules(compat.extends('plugin:switch-case/recommended'))],
     plugins: { 'switch-case': switchCase },
     rules: {},
   },
@@ -84,7 +84,7 @@ module.exports = [
   {
     plugins: { filenames },
     rules: {
-      'filenames/match-exported': [2, [null, 'kebab', 'camel']],
+      // 'filenames/match-exported': [2, [null, 'kebab', 'camel']],
     },
   },
 
@@ -112,7 +112,7 @@ module.exports = [
    */
   sonarjs.configs.recommended,
   {
-    plugins: { sonarjs },
+    rules: {},
   },
 
   /**

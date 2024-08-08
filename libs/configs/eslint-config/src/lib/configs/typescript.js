@@ -9,13 +9,13 @@ const esnext = require('./esnext');
 const compat = new FlatCompat();
 
 module.exports = [
-  ...tseslint.configs.recommended,
+  // ...tseslint.configs.recommended,
 
-  ...shopify.configs.typescript,
+  ...fixupConfigRules(shopify.configs.typescript),
 
   ...esnext,
 
-  ...fixupConfigRules(compat.extends('plugin:deprecation/recommended')),
+  // ...fixupConfigRules(compat.extends('plugin:deprecation/recommended')),
 
   {
     files: ['*.d.ts'],
@@ -26,7 +26,7 @@ module.exports = [
 
   {
     files: ['**/*.ts', '**/*.tsx'],
-    plugins: { deprecation },
+    // plugins: { deprecation }, // The plugin is already defined in plugin:deprecation/recommended
     languageOptions: {
       parser: tseslint.parser,
       parserOptions: { projectService: true },

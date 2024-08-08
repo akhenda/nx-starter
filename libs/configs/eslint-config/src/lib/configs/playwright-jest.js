@@ -18,7 +18,7 @@ module.exports = [
       '**/__tests__/**/*.[jt]s?(x)',
       '**/?(*.)+(spec|test).[jt]s?(x)',
     ],
-    plugins: { jest: jestPlugin },
+    // plugins: { jest: jestPlugin }, // Already declared
     rules: {
       // Customize Playwright rules
       // ...

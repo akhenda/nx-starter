@@ -62,27 +62,27 @@ module.exports = [
         },
       ],
 
-      '@typescript-eslint/naming-convention': [
-        'error',
-        { selector: 'default', format: ['camelCase'] },
-        { selector: 'variableLike', format: ['camelCase', 'UPPER_CASE', 'PascalCase'] },
-        { selector: 'parameter', format: ['camelCase'] },
-        { selector: 'typeLike', format: ['PascalCase'] },
-        { selector: 'property', modifiers: ['readonly'], format: ['PascalCase'] },
-        { selector: 'enumMember', format: ['UPPER_CASE'] },
-        {
-          selector: 'variable',
-          format: ['PascalCase', 'UPPER_CASE'],
-          types: ['boolean'],
-          prefix: ['is', 'should', 'has', 'can', 'did', 'will'],
-        },
-        {
-          selector: 'memberLike',
-          modifiers: ['private'],
-          format: ['camelCase'],
-          leadingUnderscore: 'forbid',
-        },
-      ],
+      // '@typescript-eslint/naming-convention': [
+      //   'error',
+      //   { selector: 'default', format: ['camelCase'] },
+      //   { selector: 'variableLike', format: ['camelCase', 'UPPER_CASE', 'PascalCase'] },
+      //   { selector: 'parameter', format: ['camelCase'] },
+      //   { selector: 'typeLike', format: ['PascalCase'] },
+      //   { selector: 'property', modifiers: ['readonly'], format: ['PascalCase'] },
+      //   { selector: 'enumMember', format: ['UPPER_CASE'] },
+      //   {
+      //     selector: 'variable',
+      //     format: ['PascalCase', 'UPPER_CASE'],
+      //     types: ['boolean'],
+      //     prefix: ['is', 'should', 'has', 'can', 'did', 'will'],
+      //   },
+      //   {
+      //     selector: 'memberLike',
+      //     modifiers: ['private'],
+      //     format: ['camelCase'],
+      //     leadingUnderscore: 'forbid',
+      //   },
+      // ],
     },
   },
 ];

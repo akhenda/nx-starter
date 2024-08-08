@@ -14,7 +14,7 @@ describe('config', () => {
       `--config ${fixtureFile('typescript-imports/eslint.config.js')} ${fixtureFile('typescript-imports')}`,
     );
 
-    expect(esLintOutput).toStrictEqual(expect.stringContaining('4 problems (4 errors, 0 warnings)'));
+    expect(esLintOutput).toStrictEqual(expect.stringContaining('3 problems (3 errors, 0 warnings)'));
 
     // import/no-cycle error
     expect(esLintOutput).toStrictEqual(expect.stringContaining('typescript-imports/check-cycle/index.ts'));

@@ -23,4 +23,23 @@ module.exports = [
     files: ['**/*.js', '**/*.jsx'],
     rules: {},
   },
+  {
+    ignores: [
+      '/dist',
+      '/node_modules',
+      '.eslintrc.js',
+      '.eslintrc.cjs',
+      '.prettier.cjs',
+      '.releaserc',
+      'release.config.cjs',
+      'coverage',
+      '/coverage',
+      '.npmrc',
+      '.github',
+      'package.json',
+      'tsconfig.json',
+      'jest.config.js',
+      'jest.config.ts',
+    ],
+  },
 ];

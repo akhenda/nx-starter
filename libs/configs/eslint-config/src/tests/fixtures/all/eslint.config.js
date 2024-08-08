@@ -17,6 +17,9 @@ module.exports = [
   ...eslintConfig.configs.node,
   ...eslintConfig.configs.react,
   ...eslintConfig.configs.webpack,
+  ...eslintConfig.configs.playwright,
+  ...eslintConfig.configs['playwright-jest'],
+  ...eslintConfig.configs.hardcore,
 
   // Prettier config - When extending, this must go last
   ...eslintConfig.configs.prettier,

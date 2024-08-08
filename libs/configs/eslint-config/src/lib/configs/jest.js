@@ -16,14 +16,14 @@ module.exports = [
       '**/__tests__/**/*.[jt]s?(x)',
       '**/?(*.)+(spec|test).[jt]s?(x)',
     ],
-    ...jestPlugin.configs['flat/recommended'],
+    // ...jestPlugin.configs['flat/recommended'],
   },
 
   /**
    * eslint-plugin-jest-formatting
    */
+  // ...fixupConfigRules(compat.extends('plugin:jest-formatting/recommended')),
   {
-    extends: [...fixupConfigRules(compat.extends('plugin:jest-formatting/recommended'))],
     files: [
       '**/test/**/*.[jt]s?(x)',
       '**/tests/**/*.[jt]s?(x)',
@@ -36,7 +36,7 @@ module.exports = [
   /**
    * Main configs
    */
-  ...shopify.configs.jest,
+  ...fixupConfigRules(shopify.configs.jest),
   {
     files: [
       '**/test/**/*.[jt]s?(x)',

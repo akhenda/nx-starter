@@ -69,6 +69,8 @@ module.exports = [
       'package.json',
       'tsconfig.json',
       'jest.config.js',
+      'jest.config.ts',
+      '**/*/jest.config.ts',
       '# The eslint plugin test fixtures contain files that deliberatly fail linting',
       "# in order to test that the plugin reports those errors. We don't want the",
       '# normal eslint run to complain about those files though so ignore them here.',

@@ -28,6 +28,13 @@
         "packageRoot": "dist/{projectRoot}"
       }
     },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "options": {
+        "jestConfig": "libs/configs/prettier/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
     "semantic-release": {
       "executor": "@theunderscorer/nx-semantic-release:semantic-release",
       "options": {

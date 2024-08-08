@@ -1,5 +1,5 @@
 describe('main', () => {
-  it('should be true', () => {
+  it('is true', () => {
     expect(true).toBe(true);
   });
 });

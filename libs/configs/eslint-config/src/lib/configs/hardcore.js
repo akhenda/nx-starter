@@ -6,13 +6,13 @@ const FlatCompat = require('@eslint/eslintrc').FlatCompat;
 const fixupConfigRules = require('@eslint/compat').fixupConfigRules;
 const switchCase = require('eslint-plugin-switch-case');
 const jsonc = require('eslint-plugin-jsonc');
-const arrayFunc = require('eslint-plugin-array-func');
+// const arrayFunc = require('eslint-plugin-array-func');
 const noSecrets = require('eslint-plugin-no-secrets');
 const filenames = require('eslint-plugin-filenames');
 const noConstructorBind = require('eslint-plugin-no-constructor-bind');
 const html = require('eslint-plugin-html');
 const sonarjs = require('eslint-plugin-sonarjs');
-const functional = require('eslint-plugin-functional');
+// const functional = require('eslint-plugin-functional');
 const unicorn = require('eslint-plugin-unicorn');
 
 const coreConfig = require('./core');
@@ -38,7 +38,7 @@ module.exports = [
   /**
    * eslint-plugin-array-func
    */
-  arrayFunc.configs.recommended,
+  // arrayFunc.configs.recommended,
 
   /**
    * eslint-plugin-no-secrets
@@ -118,48 +118,48 @@ module.exports = [
   /**
    * eslint-plugin-functional
    */
-  {
-    extends: [
-      functional.configs.externalVanillaRecommended,
-      functional.configs.recommended,
-      functional.configs.stylistic,
-      functional.configs.disableTypeChecked,
-    ],
-    rules: {
-      'functional/immutable-data': ['error', { ignorePattern: ['^module.exports$'] }],
-      'functional/functional-parameters': [
-        'error',
-        {
-          ignorePattern: [
-            '^mounted$',
-            '^created$',
-            '^unmount$',
-            '^unmounted$',
-            '^beforeDestroy$',
-            '^destroy$',
-            '^updated$',
-            '^beforeUpdate$',
-            '^onBeforeUpdate$',
-            '^onUpdated$',
-            '^onMounted$',
-          ],
-        },
-      ],
-      'functional/no-expression-statement': ['error', { ignoreVoid: true }],
-    },
-  },
-  {
-    files: ['**/*.ts'],
-    extends: [
-      functional.configs.externalTypescriptRecommended,
-      functional.configs.recommended,
-      functional.configs.stylistic,
-    ],
-    languageOptions: {
-      parser: tseslint.parser,
-      parserOptions: { projectService: true },
-    },
-  },
+  // {
+  //   extends: [
+  //     functional.configs.externalVanillaRecommended,
+  //     functional.configs.recommended,
+  //     functional.configs.stylistic,
+  //     functional.configs.disableTypeChecked,
+  //   ],
+  //   rules: {
+  //     'functional/immutable-data': ['error', { ignorePattern: ['^module.exports$'] }],
+  //     'functional/functional-parameters': [
+  //       'error',
+  //       {
+  //         ignorePattern: [
+  //           '^mounted$',
+  //           '^created$',
+  //           '^unmount$',
+  //           '^unmounted$',
+  //           '^beforeDestroy$',
+  //           '^destroy$',
+  //           '^updated$',
+  //           '^beforeUpdate$',
+  //           '^onBeforeUpdate$',
+  //           '^onUpdated$',
+  //           '^onMounted$',
+  //         ],
+  //       },
+  //     ],
+  //     'functional/no-expression-statement': ['error', { ignoreVoid: true }],
+  //   },
+  // },
+  // {
+  //   files: ['**/*.ts'],
+  //   extends: [
+  //     functional.configs.externalTypescriptRecommended,
+  //     functional.configs.recommended,
+  //     functional.configs.stylistic,
+  //   ],
+  //   languageOptions: {
+  //     parser: tseslint.parser,
+  //     parserOptions: { projectService: true },
+  //   },
+  // },
 
   /**
    * eslint-plugin-unicorn

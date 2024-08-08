@@ -1,0 +1,26 @@
+const eslintConfig = require('@nx-starter/eslint-config');
+const { fixupConfigRules } = require('@eslint/compat');
+
+const baseConfig = require('../../eslint.config');
+
+module.exports = [
+  ...fixupConfigRules(eslintConfig.configs.basic),
+  ...fixupConfigRules(baseConfig),
+  {
+    files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
+    rules: {},
+  },
+  {
+    files: ['**/*.ts', '**/*.tsx'],
+    languageOptions: {
+      parserOptions: {
+        project: './apps/api/tsconfig.*?.json',
+      },
+    },
+    rules: {},
+  },
+  {
+    files: ['**/*.js', '**/*.jsx'],
+    rules: {},
+  },
+];

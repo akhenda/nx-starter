@@ -1,11 +1,12 @@
+const { fixupConfigRules } = require('@eslint/compat');
 const shopify = require('@shopify/eslint-plugin');
 const react = require('eslint-plugin-react');
 
 module.exports = [
-  react.configs.flat.recommended,
-  react.configs.flat['jsx-runtime'],
+  ...fixupConfigRules(react.configs.flat.recommended),
+  ...fixupConfigRules(react.configs.flat['jsx-runtime']),
 
-  ...shopify.configs.react,
+  ...fixupConfigRules(shopify.configs.react),
 
   {
     files: ['**/*.test.*', '**/*.spec.*'],

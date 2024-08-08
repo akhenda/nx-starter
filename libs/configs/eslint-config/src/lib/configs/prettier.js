@@ -1,8 +1,9 @@
+const { fixupConfigRules } = require('@eslint/compat');
 const shopify = require('@shopify/eslint-plugin');
 const yml = require('eslint-plugin-yml');
 
 module.exports = [
-  ...shopify.configs.prettier,
+  ...fixupConfigRules(shopify.configs.prettier),
 
   /**
    * eslint-plugin-yml

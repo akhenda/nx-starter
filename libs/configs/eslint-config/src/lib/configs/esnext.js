@@ -30,7 +30,7 @@ module.exports = [
    */
   ...fixupConfigRules(
     compat.extends(
-      'plugin:import/recommended',
+      // 'plugin:import/recommended',
       'plugin:lodash/recommended',
       'plugin:you-dont-need-lodash-underscore/compatible',
     ),
@@ -44,18 +44,19 @@ module.exports = [
   /**
    * eslint-plugin-promise
    */
-  pluginPromise.configs['flat/recommended'],
+  // ...fixupConfigRules(pluginPromise.configs['flat/recommended']),
+  // pluginPromise.configs['flat/recommended'],
 
   /**
    * eslint-plugin-sort-class-members
    */
-  sortClassMembers.configs['flat/recommended'],
+  // sortClassMembers.configs['flat/recommended'],
 
   /**
    * eslint-plugin-import
    */
   {
-    plugins: { import: pluginImport },
+    // plugins: { import: pluginImport },
     rules: {
       'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     },
@@ -77,8 +78,8 @@ module.exports = [
   {
     plugins: { deprecate: eslintPluginDeprecate },
     rules: {
-      'deprecate/function': ['error', { name: 'legacyFunc', use: 'newFunc from this package' }],
-      'deprecate/member-expression': ['error', { name: 'React.createClass', use: 'native es6 classes' }],
+      // 'deprecate/function': ['error', { name: 'legacyFunc', use: 'newFunc from this package' }],
+      // 'deprecate/member-expression': ['error', { name: 'React.createClass', use: 'native es6 classes' }],
       // 'deprecate/import': [
       //   'error',
       //   { name: 'path/to/legacyModule', use: 'newModule' },
@@ -162,7 +163,7 @@ module.exports = [
   /**
    * General rules
    */
-  ...shopify.configs.esnext,
+  ...fixupConfigRules(shopify.configs.esnext),
   {
     languageOptions: {
       parserOptions: {

@@ -19,10 +19,13 @@ if (swcJestConfig.swcrc === undefined) {
 export default {
   displayName: 'eslint-config',
   preset: '../../../jest.preset.js',
+  testEnvironment: 'node',
   transform: {
     '^.+\\.[tj]s$': ['@swc/jest', swcJestConfig],
   },
-  moduleFileExtensions: ['ts', 'js', 'html'],
-  testEnvironment: 'node',
+  // moduleFileExtensions: ['ts', 'js', 'html'],
+  moduleFileExtensions: ['ts', 'js', 'html', 'tsx', 'json'],
   coverageDirectory: '../../../coverage/libs/configs/eslint-config',
+  testPathIgnorePatterns: ['.*/tests/fixtures/'],
+  // verbose: true,
 };

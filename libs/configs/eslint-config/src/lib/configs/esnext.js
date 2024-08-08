@@ -1,9 +1,6 @@
 const shopify = require('@shopify/eslint-plugin');
 const eslint = require('@eslint/js');
-const eslintPluginImport = require('eslint-plugin-import');
 const eslintPluginLodash = require('eslint-plugin-lodash');
-const pluginPromise = require('eslint-plugin-promise');
-const sortClassMembers = require('eslint-plugin-sort-class-members');
 const FlatCompat = require('@eslint/eslintrc').FlatCompat;
 const eslintPluginSimpleImportSort = require('eslint-plugin-simple-import-sort');
 const eslintPluginDeprecate = require('eslint-plugin-deprecate');
@@ -18,7 +15,6 @@ const core = require('./core');
 const globals = require('globals');
 
 const compat = new FlatCompat();
-const pluginImport = fixupPluginRules(eslintPluginImport);
 const pluginLodash = fixupPluginRules(eslintPluginLodash);
 
 module.exports = [
@@ -44,13 +40,12 @@ module.exports = [
   /**
    * eslint-plugin-promise
    */
-  // ...fixupConfigRules(pluginPromise.configs['flat/recommended']),
-  // pluginPromise.configs['flat/recommended'],
+  // pluginPromise.configs['flat/recommended'], // Already defined in shopify plugin
 
   /**
    * eslint-plugin-sort-class-members
    */
-  // sortClassMembers.configs['flat/recommended'],
+  // sortClassMembers.configs['flat/recommended'], // Already defined in shopify plugin
 
   /**
    * eslint-plugin-import

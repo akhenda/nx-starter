@@ -1,6 +1,5 @@
 const shopify = require('@shopify/eslint-plugin');
 const eslint = require('@eslint/js');
-const tseslint = require('typescript-eslint');
 const globals = require('globals');
 const FlatCompat = require('@eslint/eslintrc').FlatCompat;
 const fixupConfigRules = require('@eslint/compat').fixupConfigRules;

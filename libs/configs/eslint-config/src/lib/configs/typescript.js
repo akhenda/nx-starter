@@ -1,12 +1,12 @@
 const shopify = require('@shopify/eslint-plugin');
 const tseslint = require('typescript-eslint');
-const deprecation = require('eslint-plugin-deprecation');
-const FlatCompat = require('@eslint/eslintrc').FlatCompat;
+// const deprecation = require('eslint-plugin-deprecation');
+// const FlatCompat = require('@eslint/eslintrc').FlatCompat;
 const fixupConfigRules = require('@eslint/compat').fixupConfigRules;
 
 const esnext = require('./esnext');
 
-const compat = new FlatCompat();
+// const compat = new FlatCompat();
 
 module.exports = [
   // ...tseslint.configs.recommended,

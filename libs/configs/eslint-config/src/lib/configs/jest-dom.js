@@ -16,18 +16,6 @@ module.exports = [
       '**/?(*.)+(spec|test).[jt]s?(x)',
     ],
     ...jestDOM.configs['flat/recommended'],
-  },
-
-  /**
-   * General rules
-   */
-  {
-    files: [
-      '**/test/**/*.[jt]s?(x)',
-      '**/tests/**/*.[jt]s?(x)',
-      '**/__tests__/**/*.[jt]s?(x)',
-      '**/?(*.)+(spec|test).[jt]s?(x)',
-    ],
     rules: {},
   },
 ];

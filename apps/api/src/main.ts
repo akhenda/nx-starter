@@ -1,11 +1,11 @@
-import koa from 'koa';
+import Koa from 'koa';
 
 const host = process.env.HOST ?? 'localhost';
 const port = process.env.PORT ? Number(process.env.PORT) : 3000;
 
-const app = new koa();
+const app = new Koa();
 
-app.use(async (ctx) => {
+app.use((ctx) => {
   ctx.body = { message: 'Hello API' };
 });
 

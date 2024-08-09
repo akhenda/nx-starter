@@ -1,5 +1,3 @@
-/* eslint-disable no-process-env */
-/* eslint-disable no-console */
 import Koa from 'koa';
 
 const host = process.env.HOST ?? 'localhost';

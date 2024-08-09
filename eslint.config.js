@@ -59,6 +59,7 @@ module.exports = [
       '/node_modules',
       '.eslintrc.js',
       '.eslintrc.cjs',
+      'eslint.config.js',
       '.prettier.cjs',
       '.releaserc',
       'release.config.cjs',

@@ -11,7 +11,9 @@ module.exports = [
   ...baseConfig,
   {
     files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
-    rules: {},
+    rules: {
+      '@typescript-eslint/no-require-imports': 'off',
+    },
   },
   {
     files: ['**/*.ts', '**/*.tsx'],

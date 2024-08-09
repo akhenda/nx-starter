@@ -4,8 +4,7 @@ const { fixupConfigRules } = require('@eslint/compat');
 const baseConfig = require('../../eslint.config');
 
 module.exports = [
-  ...fixupConfigRules(eslintConfig.configs.basic),
-  ...fixupConfigRules(baseConfig),
+  ...baseConfig,
   {
     files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
     rules: {},

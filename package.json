@@ -18,10 +18,14 @@
     "gc": "git add . && cz",
     "gc-ai": "git add . && npx czg ai -N=5",
     "deps:audit": "npx bun-audit",
-    "deps:update:1": "bunx nx run-many --target=update-deps --all",
+    "deps:update:1": "bun nx run-many --target=update-deps --all",
     "deps:update:2": "bunx npm-check-updates --root --format group -i",
     "deps:update:3": "bunx taze --interactive --recursive",
-    "deps:update:4": "bunx npm-upgrade"
+    "deps:update:4": "bunx npm-upgrade",
+    "build": "bun nx run-many --target=build --all",
+    "test": "bun nx run-many --target=test --all",
+    "lint": "bun nx run-many --target=lint --all",
+    "lint:fix": "bun nx run-many --target=lint:fix --all"
   },
   "config": {
     "commitizen": {

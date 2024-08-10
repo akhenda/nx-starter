@@ -9,6 +9,7 @@ Shared prettier configuration
 ## Installation
 
 ```bash
+pnpm install -D prettier prettier-plugin-tailwindcss
 pnpm add -D @nx-starter/prettier
 ```
 

@@ -1,6 +1,6 @@
 {
   "name": "@nx-starter/browserslist",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Shareable browserslist configuration",
   "author": "J.A.",
   "dependencies": {

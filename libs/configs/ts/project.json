@@ -48,7 +48,7 @@
       "options": {
         "github": true,
         "changelog": true,
-        "npm": true,
+        "npm": false,
         "tagFormat": "ts-v${VERSION}"
       }
     }

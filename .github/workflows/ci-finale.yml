@@ -32,9 +32,6 @@ jobs:
             ./coverage/apps/**/coverage-summary.json
             ./coverage/libs/configs/**/coverage-summary.json
             ./coverage/libs/**/coverage-summary.json
-            coverage/apps/**/coverage-summary.json
-            coverage/libs/configs/**/coverage-summary.json
-            coverage/libs/**/coverage-summary.json
 
       - name: 📋 TODO to Issue
         if: ${{ github.ref == 'refs/heads/main' }}

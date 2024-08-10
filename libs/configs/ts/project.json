@@ -1,7 +1,7 @@
 {
   "name": "ts",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/configs/ts/src",
+  "sourceRoot": "libs/configs/ts",
   "projectType": "library",
   "release": {
     "version": {

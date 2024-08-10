@@ -4,7 +4,7 @@
   "description": "A set of typescript configuration files that can be extended.",
   "author": "J.A.",
   "dependencies": {
-    "@swc/helpers": "~0.5.11"
+    "@swc/helpers": "0.5.12"
   },
   "type": "commonjs"
 }

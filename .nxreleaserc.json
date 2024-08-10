@@ -1,7 +1,7 @@
 {
   "dryRun": false,
   "changelog": true,
-  "npm": false,
+  "npm": true,
   "github": true,
   "repositoryUrl": "https://github.com/akhenda/nx-starter.git",
   "branches": ["main", { "name": "dev", "channel": "beta", "prerelease": "rc" }],

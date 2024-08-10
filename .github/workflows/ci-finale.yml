@@ -21,14 +21,16 @@ jobs:
       - name: Display structure of downloaded files
         run: ls -R
 
-      # - name: 📔 Generating coverage badges
-      #   uses: jpb06/jest-badges-action@latest
-      #   if: github.event_name != 'pull_request'
-      #   with:
-      #     branches: main,dev
-      #     commit-message: 'chore: update coverage badges [skip ci]'
-      #     output-folder: ./.github/badges
-      #     coverage-summary-path: ./coverage/libs/browserslist-config/coverage-summary.json
+      - name: 📔 Generating coverage badges
+        uses: jpb06/jest-badges-action@latest
+        if: github.event_name != 'pull_request'
+        with:
+          branches: main,dev
+          commit-message: 'chore: update coverage badges [skip ci]'
+          output-folder: ./.github/badges
+          coverage-summary-path: |
+            ./coverage/apps/**/coverage-summary.json
+            ./coverage/libs/**/coverage-summary.json
 
       - name: 📋 TODO to Issue
         if: ${{ github.ref == 'refs/heads/main' }}

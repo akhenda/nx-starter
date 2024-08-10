@@ -4,7 +4,7 @@
   "description": "Projects build & runtime configs",
   "author": "J.A.",
   "dependencies": {
-    "@swc/helpers": "~0.5.11",
+    "@swc/helpers": "0.5.12",
     "envalid": "8.0.0"
   },
   "type": "commonjs",

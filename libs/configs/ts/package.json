@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "A set of typescript configuration files that can be extended.",
   "author": "J.A.",
+  "type": "commonjs",
   "dependencies": {
-    "@swc/helpers": "~0.5.11"
-  },
-  "type": "commonjs"
+    "@swc/helpers": "0.5.12"
+  }
 }

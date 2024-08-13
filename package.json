@@ -34,7 +34,7 @@
     }
   },
   "dependencies": {
-    "axios": "1.7.3",
+    "axios": "1.7.4",
     "envalid": "8.0.0",
     "globals": "15.9.0",
     "koa": "2.15.3",

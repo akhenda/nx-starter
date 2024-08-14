@@ -1,3 +1,9 @@
+## [1.0.1-rc.1](https://github.com/akhenda/nx-starter/compare/ts-v1.0.0...ts-v1.0.1-rc.1) (2024-08-14)
+
+### Bug Fixes
+
+- **deps:** update dependency axios to v1.7.4 ([6f6be06](https://github.com/akhenda/nx-starter/commit/6f6be069fcb96d85c83e2ade78e801d8150ad688))
+
 # 1.0.0 (2024-08-10)
 
 ### Bug Fixes

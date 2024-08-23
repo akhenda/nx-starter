@@ -1,3 +1,9 @@
+## [1.0.1-rc.2](https://github.com/akhenda/nx-starter/compare/prettier-v1.0.1-rc.1...prettier-v1.0.1-rc.2) (2024-08-23)
+
+### Bug Fixes
+
+- **deps:** update all non-major dependencies ([201dac6](https://github.com/akhenda/nx-starter/commit/201dac62e6d2b9cd90e160ff9fd85381b952adc9))
+
 ## [1.0.1-rc.1](https://github.com/akhenda/nx-starter/compare/prettier-v1.0.0...prettier-v1.0.1-rc.1) (2024-08-14)
 
 ### Bug Fixes

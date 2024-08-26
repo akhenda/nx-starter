@@ -66,8 +66,8 @@
     "@types/jest": "29.5.12",
     "@types/koa": "2.15.0",
     "@types/node": "22.5.0",
-    "@typescript-eslint/eslint-plugin": "8.2.0",
-    "@typescript-eslint/parser": "8.2.0",
+    "@typescript-eslint/eslint-plugin": "8.3.0",
+    "@typescript-eslint/parser": "8.3.0",
     "cz-git": "1.9.4",
     "esbuild": "0.23.1",
     "eslint": "9.9.1",
@@ -120,7 +120,7 @@
     "ts-jest": "29.2.5",
     "ts-node": "10.9.2",
     "typescript": "5.5.4",
-    "typescript-eslint": "8.2.0",
+    "typescript-eslint": "8.3.0",
     "verdaccio": "5.32.1"
   },
   "nx": {

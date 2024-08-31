@@ -1,3 +1,9 @@
+## [1.0.1-rc.3](https://github.com/akhenda/nx-starter/compare/browserslist-v1.0.1-rc.2...browserslist-v1.0.1-rc.3) (2024-08-31)
+
+### Bug Fixes
+
+- **deps:** update dependency axios to v1.7.6 ([16f5911](https://github.com/akhenda/nx-starter/commit/16f591183940d6c9f6448dfc0a9002fc0efc15d3))
+
 ## [1.0.1-rc.2](https://github.com/akhenda/nx-starter/compare/browserslist-v1.0.1-rc.1...browserslist-v1.0.1-rc.2) (2024-08-23)
 
 ### Bug Fixes

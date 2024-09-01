@@ -1,6 +1,6 @@
 {
   "name": "@nx-starter/constants",
-  "version": "1.0.1-rc.3",
+  "version": "1.0.1-rc.4",
   "description": "Projects build & runtime configs",
   "author": "J.A.",
   "dependencies": {

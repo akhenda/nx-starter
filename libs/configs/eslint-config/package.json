@@ -1,6 +1,6 @@
 {
   "name": "@nx-starter/eslint-config",
-  "version": "1.0.1-rc.3",
+  "version": "1.0.1-rc.4",
   "type": "commonjs",
   "main": "./src/index.js",
   "typings": "./src/index.d.ts",

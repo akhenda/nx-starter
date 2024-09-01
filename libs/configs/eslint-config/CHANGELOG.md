@@ -1,3 +1,9 @@
+## [1.0.1-rc.4](https://github.com/akhenda/nx-starter/compare/eslint-config-v1.0.1-rc.3...eslint-config-v1.0.1-rc.4) (2024-09-01)
+
+### Bug Fixes
+
+- **deps:** update dependency axios to v1.7.7 ([5102dcf](https://github.com/akhenda/nx-starter/commit/5102dcf314711ed94db30954b00e6d74179000a4))
+
 ## [1.0.1-rc.3](https://github.com/akhenda/nx-starter/compare/eslint-config-v1.0.1-rc.2...eslint-config-v1.0.1-rc.3) (2024-08-31)
 
 ### Bug Fixes

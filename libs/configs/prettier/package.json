@@ -1,6 +1,6 @@
 {
   "name": "@nx-starter/prettier",
-  "version": "1.0.1-rc.3",
+  "version": "1.0.1-rc.4",
   "description": "Shareable prettier configuration",
   "author": "J.A.",
   "main": "index.json",
